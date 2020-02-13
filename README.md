@@ -1,5 +1,21 @@
 # Apply Random Forest to Classify House Loan Workflow  
 
+## 1. Background and Target
+Financial organizations need to decide if it is risky to loan money to someone.
+They can use supervized machine learning models like Random Forest(RF) to do this classification task.
+Input data: features, like people's demographics(gender, age..), band credits, education etc.
+Output data: classification classes(Y, N)
+
+## 1. Exploratory Data Analysis (EDA)
+Financial organizations need to decide if it is risky to loan money to someone.
+They can use supervized machine learning models like Random Forest(RF) to do this classification task.
+Input data: features, like people's demographics(gender, age..), band credits, education etc.
+Output data: classification classes(Y, N)
+
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="100%"/>
+</div>
+
 ## 1. Box plot with matplotlib.pyplot to identify outliers
 continuous features
 
