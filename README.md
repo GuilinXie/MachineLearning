@@ -30,7 +30,7 @@ Understand the data through different angles
 </div>  
   
 ## 2. Data Preprocessing
-Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder)
+Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="100%"/>
