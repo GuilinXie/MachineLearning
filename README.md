@@ -4,7 +4,7 @@
 continuous features
 
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="50%" height="50%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="80%" height="80%"/>
 </div>
 
 ## 2. Distribution plots with seaborn is distplot & pairplot 
