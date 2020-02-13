@@ -10,15 +10,15 @@ Output data: classification classes(Y, N)
 Understand the data through different angle
 ### 2.1 Number of features & feature types
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="35%" height="25%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="10%" height="10%"/>
 </div>
 ### 2.2 Specific feature's statistics
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_2_feature_viz.png" width="35%" height="25%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_2_feature_viz.png" width="10%" height="10%"/>
 </div>
 ### 2.3 Number of nulls in the data
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_3_feature_viz.png" width="35%" height="25%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_3_feature_viz.png" width="10%" height="10%"/>
 </div>
 
 <div align="left">
