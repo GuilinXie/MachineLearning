@@ -7,7 +7,7 @@ Input data: features, like people's demographics(gender, age..), band credits, e
 Output data: classification classes(Y, N)  
 
 ## 2. Exploratory Data Analysis (EDA)
-Understand the data through different angle
+Understand the data through different angles
 ### 2.1 number of features & features' type
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="20%" height="20%"/>
@@ -21,6 +21,12 @@ Understand the data through different angle
 ### 2.3 number of nulls in the data
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_3_feature_viz.png" width="20%" height="20%"/>
+</div>  
+
+### 2.4 features distribution
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/1_feature_dist_viz.png" width="20%" height="20%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/2_feature_viz.png" width="20%" height="20%"/>
 </div>
 
 <div align="left">
