@@ -25,8 +25,8 @@ Understand the data through different angles
 
 ### 2.4 features distribution
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/1_feature_dist_viz.png" width="20%" height="20%"/>
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/2_feature_viz.png" width="20%" height="20%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/1_feature_dist_viz.png" width="35%" height="35%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/2_feature_viz.png" width="35%" height="35%"/>
 </div>
 
 <div align="left">
