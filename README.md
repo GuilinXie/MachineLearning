@@ -27,7 +27,10 @@ Understand the data through different angles
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/1_feature_dist_viz.png" width="35%" height="35%"/>
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/2_feature_viz.png" width="35%" height="35%"/>
-</div>
+</div>  
+  
+## 2. Data Preprocessing
+Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder)
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="100%"/>
