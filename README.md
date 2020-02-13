@@ -6,7 +6,7 @@ They can use supervized machine learning models like Random Forest(RF) to do thi
 Input data: features, like people's demographics(gender, age..), band credits, education etc.
 Output data: classification classes(Y, N)
 
-## 1. Exploratory Data Analysis (EDA)
+## 2. Exploratory Data Analysis (EDA)
 Financial organizations need to decide if it is risky to loan money to someone.
 They can use supervized machine learning models like Random Forest(RF) to do this classification task.
 Input data: features, like people's demographics(gender, age..), band credits, education etc.
