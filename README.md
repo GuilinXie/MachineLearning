@@ -8,10 +8,16 @@ Output data: classification classes(Y, N)
 
 ## 2. Exploratory Data Analysis (EDA)
 Understand the data through different angle
-### 2.1 Number of features & feature types & feature's statistics & Number of nulls in the data
+### 2.1 number of features & features' type
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="20%" height="20%"/>
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_2_feature_viz.png" width="20%" height="20%"/>
+</div>  
+### 2.2 feature's statistics
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_2_feature_viz.png" width="25%" height="25%"/>
+</div>  
+### 2.3 number of nulls in the data
+<div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_3_feature_viz.png" width="20%" height="20%"/>
 </div>
 
