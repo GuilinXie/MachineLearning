@@ -7,10 +7,19 @@ Input data: features, like people's demographics(gender, age..), band credits, e
 Output data: classification classes(Y, N)  
 
 ## 2. Exploratory Data Analysis (EDA)
-Financial organizations need to decide if it is risky to loan money to someone.
-They can use supervized machine learning models like Random Forest(RF) to do this classification task.
-Input data: features, like people's demographics(gender, age..), band credits, education etc.
-Output data: classification classes(Y, N)
+Understand the data through different angle
+### 2.1 Number of features & feature types
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="35%" height="35%"/>
+</div>
+### 2.2 Specific feature's statistics
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_2_feature_viz.png" width="35%" height="35%"/>
+</div>
+### 2.3 Number of nulls in the data
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_3_feature_viz.png" width="35%" height="35%"/>
+</div>
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="100%"/>
