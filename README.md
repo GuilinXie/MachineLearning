@@ -1,13 +1,13 @@
 # Apply Random Forest to Classify House Loan Workflow  
 
 ## 1. Background and Target
-Financial organizations need to decide if it is risky to loan money to someone.  
-They can use supervized machine learning models like Random Forest(RF) to do this classification task.  
-Input data: features, like people's demographics(gender, age..), band credits, education etc.  
-Output data: classification classes(Y, N)  
+* Financial organizations need to decide if it is risky to loan money to someone.  
+* They can use supervized machine learning models like Random Forest(RF) to do this classification task.  
+* Input data: features, like people's demographics(gender, age..), band credits, education etc.  
+* Output data: classification classes(Y, N)  
 
 ## 2. Exploratory Data Analysis (EDA)
-Understand the data through different angles
+⋅⋅*Understand the data through different angles
 ### 2.1 number of features & features' type
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="20%" height="20%"/>
@@ -46,7 +46,7 @@ plt.show()
 Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
    
 ## 3. Model training & tuning params   
-RF model configuration example
+* RF model configuration example
 ```
 rf = RandomForestClassifier(
                        bootstrap=True, ccp_alpha=0.0, class_weight=None,
@@ -61,7 +61,7 @@ rf = RandomForestClassifier(
 The parameters for RF to tune is usually **max_depth**, **mat_features**, and **n_estimators**
    
 ## 4. Evaluate model performance
-Possible Metrics:
+* Possible Metrics:
 
 
 
@@ -74,20 +74,21 @@ Possible Metrics:
 | 5 | ROC/AUC     |     |
 | 6| Confusion Matrix    |     |
 
-**ROC/AUC** for binary classify
+* Note:
+**ROC/AUC** for binary classify  
 Sensitivity(Recall, True Positive Rate)->ROC y-axis
 Specificity(False Positive Rate) -> ROC x-axis
-
-**confusion matrix**
-In my project, I use confusion matrix to check the model performance.
+  
+**confusion matrix**  
+* In my project, I use confusion matrix to check the model performance.  
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
 </div>
 
 ## 5. Interpret Models
-Generally, LR model is not easy to interpret because of the random selection of samples and features,   
-but we could still pick some of the individul trees to visulize the prediction logics.   
-In this project, I chose one tree(max_depth=4, max_features=4) from the forest to check how features contribute to the final classification.
+* LR model is not easy to interpret because of the random selection of samples and features,   
+* However could still pick some of the individul trees to visulize the prediction logics.   
+* In this project, I chose one tree(max_depth=4, max_features=4) from the forest to check how features contribute to the final classification.
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="80%"/>
