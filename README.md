@@ -77,7 +77,7 @@ rf = RandomForestClassifier(
 * Note:
 **ROC/AUC** for binary classify  
 Sensitivity(Recall, True Positive Rate)->ROC y-axis   
-Specificity(False Positive Rate) -> ROC x-axis
+1-Specificity(False Positive Rate) -> ROC x-axis
   
 **confusion matrix**  
 * In my project, I used confusion matrix to check the model performance.  
