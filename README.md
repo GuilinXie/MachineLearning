@@ -7,7 +7,7 @@
 * Output data: classification classes(Y, N)  
 
 ## 2. Exploratory Data Analysis (EDA)
-⋅⋅*Understand the data through different angles
+* Understand the data through different angles
 ### 2.1 number of features & features' type
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/0_1_feature_viz.png" width="20%" height="20%"/>
@@ -43,7 +43,7 @@ plt.show()
   
     
 ## 2. Data Preprocessing
-Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
+* Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
    
 ## 3. Model training & tuning params   
 * RF model configuration example
@@ -58,7 +58,7 @@ rf = RandomForestClassifier(
                        n_jobs=None, oob_score=False, random_state=None,
                        verbose=0, warm_start=False)
 ```
-The parameters for RF to tune is usually **max_depth**, **mat_features**, and **n_estimators**
+* The parameters for RF to tune is usually **max_depth**, **mat_features**, and **n_estimators**
    
 ## 4. Evaluate model performance
 * Possible Metrics:
