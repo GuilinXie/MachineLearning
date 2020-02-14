@@ -61,10 +61,8 @@ rf = RandomForestClassifier(
 * The parameters for RF to tune is usually **max_depth**, **max_features**, and **n_estimators**
    
 ## 4. Evaluate model performance
-* Possible Metrics:
 
-
-
+### 4.1 Possible Metrics
 | Metrics        | Classification           | Regression  |
 | ------------- |:-------------:| -----:|
 |   1    | Precison | MSE |
@@ -74,12 +72,12 @@ rf = RandomForestClassifier(
 | 5 | ROC/AUC     |     |
 | 6| Confusion Matrix    |     |
 
-* Note:
+* Note:  
 **ROC/AUC** for binary classify  
 Sensitivity(Recall, True Positive Rate)->ROC y-axis   
-1-Specificity(False Positive Rate) -> ROC x-axis
+1-Specificity(False Positive Rate) -> ROC x-axis  
 
-**Clasification Report**
+### 4.2 Clasification Report  
 ```
 from sklearn.metrics import classification_report
 
@@ -90,8 +88,8 @@ for line in result.split("\r\n"):
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/classification_report.png" width="50%" height="50%"/>
 </div>
-**confusion matrix**  
-* In my project, I used confusion matrix to check the model performance.  
+### 4.3 confusion matrix  
+* In this project, I used confusion matrix to check the model performance.  
 ```
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
@@ -104,17 +102,16 @@ plt.ylabel("True Label")
 plt.xlabel("Predicted Label")
 bottom, top = ax.get_ylim()
 ax.set_ylim(bottom, top)
-# ax.set_ylim(bottom + 0.5, top - 0.5)
 plt.title("Confusion Matrix")
 ```
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
 </div>
 
-## 5. Interpret Models
-* LR model is not easy to interpret because of the random selection of samples and features,   
-* However, we could still pick some of the individul trees to visulize the prediction logics.   
-* In this project, I chose one tree(max_depth=4, max_features=4) from the forest to check how features contribute to the final classification.
+## 5. Interpret Models  
+* LR model is not easy to interpret because of the random selection of samples and features,     
+* However, we could still pick some of the individul trees to visulize the prediction logics.     
+* In this project, I chose one tree(max_depth=4, max_features=4) from the forest to check how features contribute to the final classification.  
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="80%"/>
@@ -123,21 +120,15 @@ plt.title("Confusion Matrix")
 estimator = rf[1].estimators_[1]
 from sklearn.tree import export_graphviz
 
-# Export as dot file
 export_graphviz(estimator, 
                 out_file='tree.dot', 
                 feature_names = features,
                 class_names = rf[1].classes_,
                 rounded = True, proportion = False, 
                 precision = 2, filled = True)
-# Convert to png
-# from subprocess import call
-# #call(['dot', '-Tpng', 'tree.dot', '-o', 'tree.png', '-Gdpi=600'])
-
-# call(['dot', '-Tpdf', 'tree.dot', '-o', 'C:\Users\LXie\Desktop\my_github\MachineLearning\LoanPrediction', '-Gdpi=600'])
-# dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to convert dot to pdf
-# dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png
 ```
+ dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to convert dot to pdf
+ dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png
 
 ## 6. reference:  
 1 https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset/tasks  
