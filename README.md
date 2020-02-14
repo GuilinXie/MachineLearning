@@ -121,7 +121,7 @@ plt.title("Confusion Matrix")
 </div>  
   
 ```  
-estimator = rf[1].estimators_[1]
+estimator = rf[1].estimators_[1]                                                                                                         
 from sklearn.tree import export_graphviz
 
 export_graphviz(estimator, 
