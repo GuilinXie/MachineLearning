@@ -41,13 +41,47 @@ plt.show()
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/3_feature_label_pairplot_pic.png" width="50%" height="50%"/>
 </div> 
   
-  
-  
+    
 ## 2. Data Preprocessing
 Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
+   
+## 3. Model training & tuning params   
+RF model configuration example
+```
+rf = RandomForestClassifier(
+                       bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=4, max_features=4,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=20,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)
+```
+The parameters for RF to tune is usually **max_depth**, **mat_features**, and **n_estimators**
+   
+## 4. Evaluate model performance
+Metrics for classification:
 
+**Precision**, **recall**, **f1**, **accuracy**
+**ROC/AUC** for binary classify
+Sensitivity(Recall, True Positive Rate)->ROC y-axis
+Specificity(False Positive Rate) -> ROC x-axis
+
+**confusion matrix**
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="100%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
+</div>
+
+Mean-squared-error (MSE)
+Root-mean-squared-error (RMSE)
+mean-absolute-error (MAE)
+R^2 or Coefficient of Determination
+Adjusted R^2
+
+Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
+<div align="left">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.pngg" width="90%" height="100%"/>
 </div>
 
 ## 1. Box plot with matplotlib.pyplot to identify outliers
