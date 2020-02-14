@@ -38,7 +38,7 @@ plt.show()
 ```
 
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/3_feature_label_pairplot_pic.png" width="45%" height="45%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/3_feature_label_pairplot_pic.png" width="50%" height="50%"/>
 </div> 
   
   
