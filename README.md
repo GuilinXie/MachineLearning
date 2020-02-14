@@ -63,9 +63,7 @@ The parameters for RF to tune is usually **max_depth**, **mat_features**, and **
 ## 4. Evaluate model performance
 Possible Metrics:
 
-**ROC/AUC** for binary classify
-Sensitivity(Recall, True Positive Rate)->ROC y-axis
-Specificity(False Positive Rate) -> ROC x-axis
+
 
 | Metrics        | Classification           | Regression  |
 | ------------- |:-------------:| -----:|
@@ -74,7 +72,11 @@ Specificity(False Positive Rate) -> ROC x-axis
 |3 | F1     |    MAE |
 | 4 | Accuracy      |    R^2 |
 | 5 | ROC/AUC     |     |
-| 5| Confusion Matrix    |     |
+| 6| Confusion Matrix    |     |
+
+**ROC/AUC** for binary classify
+Sensitivity(Recall, True Positive Rate)->ROC y-axis
+Specificity(False Positive Rate) -> ROC x-axis
 
 **confusion matrix**
 <div align="left">
