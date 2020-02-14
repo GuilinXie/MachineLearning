@@ -56,7 +56,7 @@ rf = RandomForestClassifier(
                        min_samples_leaf=1, min_samples_split=2,
                        min_weight_fraction_leaf=0.0, n_estimators=20,
                        n_jobs=None, oob_score=False, random_state=None,
-                       verbose=0, warm_start=False)
+                       verbose=0, warm_start=False)                                                                                     
 ```
 * The parameters for RF to tune is usually **max_depth**, **max_features**, and **n_estimators**
    
