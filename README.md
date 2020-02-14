@@ -61,18 +61,20 @@ rf = RandomForestClassifier(
 The parameters for RF to tune is usually **max_depth**, **mat_features**, and **n_estimators**
    
 ## 4. Evaluate model performance
-Metrics for classification:
+Possible Metrics:
 
-**Precision**, **recall**, **f1**, **accuracy**
 **ROC/AUC** for binary classify
 Sensitivity(Recall, True Positive Rate)->ROC y-axis
 Specificity(False Positive Rate) -> ROC x-axis
 
 | Metrics        | Classification           | Regression  |
 | ------------- |:-------------:| -----:|
-|   1    | Precison | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|   1    | Precison | MSE |
+| 2      | Recall      |   RMSE |
+|3 | F1     |    MAE |
+| 4 | Accuracy      |    R^2 |
+| 5 | ROC/AUC     |     |
+| 5| Confusion Matrix    |     |
 
 **confusion matrix**
 <div align="left">
