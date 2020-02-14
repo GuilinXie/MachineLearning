@@ -58,7 +58,7 @@ rf = RandomForestClassifier(
                        n_jobs=None, oob_score=False, random_state=None,
                        verbose=0, warm_start=False)
 ```
-* The parameters for RF to tune is usually **max_depth**, **mat_features**, and **n_estimators**
+* The parameters for RF to tune is usually **max_depth**, **max_features**, and **n_estimators**
    
 ## 4. Evaluate model performance
 * Possible Metrics:
