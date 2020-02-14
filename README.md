@@ -85,9 +85,9 @@ In my project, I use confusion matrix to check the model performance.
 </div>
 
 ## 5. Interpret Models
-Generally, LR model is not friendly to interpret because of the random selection of samples and features, 
-but we could still pick some of the individul trees to visulize the prediction logics.
-In this project, I chose one individual tree to check how the features contribute to the final classification.
+Generally, LR model is not easy to interpret because of the random selection of samples and features,   
+but we could still pick some of the individul trees to visulize the prediction logics.   
+In this project, I chose one tree(max_depth=4, max_features=4) from the forest to check how features contribute to the final classification.
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="80%"/>
