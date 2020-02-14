@@ -79,34 +79,18 @@ Sensitivity(Recall, True Positive Rate)->ROC y-axis
 Specificity(False Positive Rate) -> ROC x-axis
 
 **confusion matrix**
+In my project, I use confusion matrix to check the model performance.
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
 </div>
 
-Mean-squared-error (MSE)
-Root-mean-squared-error (RMSE)
-mean-absolute-error (MAE)
-R^2 or Coefficient of Determination
-Adjusted R^2
-
-Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
-<div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.pngg" width="90%" height="100%"/>
-</div>
-
-## 1. Box plot with matplotlib.pyplot to identify outliers
-continuous features
+## 5. Interpret Models
+Generally, LR model is not friendly to interpret because of the random selection of samples and features, 
+but we could still pick some of the individul trees to visulize the prediction logics.
+In this project, I chose one individual tree to check how the features contribute to the final classification.
 
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="100%"/>
-</div>
-
-## 2. Distribution plots with seaborn is distplot & pairplot 
-continuous & categorical features
-
-<div align="left">
-<img src="https://github.com/GuilinXie/DataVisualization/blob/master/image/3_1_tip_distribution.png" width="35%" height="35%"/>
-<img src="https://github.com/GuilinXie/DataVisualization/blob/master/image/3_2_pairplot_for_smoker.png" width="35%" height="35%">
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="80%"/>
 </div>
 
 
