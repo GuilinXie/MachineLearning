@@ -119,7 +119,7 @@ plt.title("Confusion Matrix")
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="80%"/>
 </div>  
-
+  
 ```  
 estimator = rf[1].estimators_[1]
 from sklearn.tree import export_graphviz
@@ -129,10 +129,10 @@ export_graphviz(estimator,
                 feature_names = features,
                 class_names = rf[1].classes_,
                 rounded = True, proportion = False, 
-                precision = 2, filled = True)
+                precision = 2, filled = True)  
 ```  
- dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to convert dot to pdf  
- dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png  
+dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to convert dot to pdf    
+dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png    
   
 ## 6. reference:  
 1 https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset/tasks  
