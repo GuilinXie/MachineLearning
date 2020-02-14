@@ -80,7 +80,7 @@ Sensitivity(Recall, True Positive Rate)->ROC y-axis
 ### 4.2 Clasification Report    
 
 ```  
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report                                                                                       
 
 result = classification_report(y_test, y_pred, target_names=rf[1].classes_)
 for line in result.split("\r\n"):
