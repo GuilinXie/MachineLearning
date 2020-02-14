@@ -68,6 +68,12 @@ Metrics for classification:
 Sensitivity(Recall, True Positive Rate)->ROC y-axis
 Specificity(False Positive Rate) -> ROC x-axis
 
+| Metrics        | Classification           | Regression  |
+| ------------- |:-------------:| -----:|
+|   1    | Precison | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 **confusion matrix**
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
