@@ -31,10 +31,17 @@ Understand the data through different angles
 </div>  
 
 #### features & labels correlation
+```
+sns.set(style="ticks", color_codes=True)
+sns.pairplot(train[['ApplicantIncome','CoapplicantIncome','LoanAmount','Loan_Status']], hue="Loan_Status", palette="coolwarm")
+plt.show()
+```
+
 <div align="left">
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/1_feature_dist_viz.png" width="35%" height="35%"/>
-<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/2_feature_viz.png" width="35%" height="35%"/>
+<img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/3_feature_label_pairplot_pic.png" width="35%" height="35%"/>
 </div> 
+  
+  
   
 ## 2. Data Preprocessing
 Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
