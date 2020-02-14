@@ -76,7 +76,7 @@ rf = RandomForestClassifier(
 
 * Note:
 **ROC/AUC** for binary classify  
-Sensitivity(Recall, True Positive Rate)->ROC y-axis
+Sensitivity(Recall, True Positive Rate)->ROC y-axis   
 Specificity(False Positive Rate) -> ROC x-axis
   
 **confusion matrix**  
