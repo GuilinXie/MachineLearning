@@ -80,14 +80,14 @@ Sensitivity(Recall, True Positive Rate)->ROC y-axis
 Specificity(False Positive Rate) -> ROC x-axis
   
 **confusion matrix**  
-* In my project, I use confusion matrix to check the model performance.  
+* In my project, I used confusion matrix to check the model performance.  
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
 </div>
 
 ## 5. Interpret Models
 * LR model is not easy to interpret because of the random selection of samples and features,   
-* However could still pick some of the individul trees to visulize the prediction logics.   
+* However, we could still pick some of the individul trees to visulize the prediction logics.   
 * In this project, I chose one tree(max_depth=4, max_features=4) from the forest to check how features contribute to the final classification.
 
 <div align="left">
