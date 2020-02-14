@@ -77,20 +77,23 @@ rf = RandomForestClassifier(
 Sensitivity(Recall, True Positive Rate)->ROC y-axis   
 1-Specificity(False Positive Rate) -> ROC x-axis  
 
-### 4.2 Clasification Report  
-```
+### 4.2 Clasification Report    
+
+```  
 from sklearn.metrics import classification_report
 
 result = classification_report(y_test, y_pred, target_names=rf[1].classes_)
 for line in result.split("\r\n"):
     print(line)
-```
+```  
+
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/classification_report.png" width="50%" height="50%"/>
-</div>
+</div>  
+
 ### 4.3 confusion matrix  
 * In this project, I used confusion matrix to check the model performance.  
-```
+```  
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -103,7 +106,7 @@ plt.xlabel("Predicted Label")
 bottom, top = ax.get_ylim()
 ax.set_ylim(bottom, top)
 plt.title("Confusion Matrix")
-```
+```  
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/confusion%20matrix.png" width="50%" height="50%"/>
 </div>
@@ -115,8 +118,9 @@ plt.title("Confusion Matrix")
 
 <div align="left">
 <img src="https://github.com/GuilinXie/MachineLearning/blob/master/image/tree_visulization.png" width="90%" height="80%"/>
-</div>
-```
+</div>  
+
+```  
 estimator = rf[1].estimators_[1]
 from sklearn.tree import export_graphviz
 
@@ -126,10 +130,10 @@ export_graphviz(estimator,
                 class_names = rf[1].classes_,
                 rounded = True, proportion = False, 
                 precision = 2, filled = True)
-```
- dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to convert dot to pdf
- dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png
-
+```  
+ dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to convert dot to pdf  
+ dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png  
+  
 ## 6. reference:  
 1 https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset/tasks  
 2 https://medium.com/vickdata/a-simple-guide-to-scikit-learn-pipelines-4ac0d974bdcf  
