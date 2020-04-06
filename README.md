@@ -77,7 +77,7 @@ rf = RandomForestClassifier(
 ## 4. Evaluate model performance
 
 ### 4.1 Possible Metrics
-| Metrics        | Classification           | Regression  |
+|        | Classification  Metircs         | Regression  Metrics|
 | ------------- |:-------------:| -----:|
 |   1    | Precison | MSE |
 | 2      | Recall      |   RMSE |
