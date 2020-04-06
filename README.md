@@ -43,7 +43,21 @@ plt.show()
   
     
 ## 2. Data Preprocessing
-* Clean, filter, fill(imputer), transform, normalization, encoder(one-hot, LabelEncoder), feature-selection(selectKbest,chi-squared)
+### Basic Steps:
+| Step Name        | Whether Needed for Sklearn RF | 
+| ------------- |:-------------:|
+|   Clean    | Needed | 
+| Fill(Imputer)      | Needed  for Sklearn RF, maybe not needed for other RF library    |  
+|Transform | Needed     |  
+|Encoder(One-Hot) | Not Needed [5]  |
+|Encoder(Label-Encode) | Needed for Sklearn RF, as Sklearn works with numeric features, maybe not necessray for other RF library |
+| Normalization | Not Needed      |  
+| Feature Selection | LR can select features by itself, other models may use selectKbest, chi-squared     |  
+
+
+### Notes:
+normalization (not required for RF, but Neural Networks need normalization)
+
    
 ## 3. Model training & tuning params   
 * RF model configuration example
@@ -135,7 +149,9 @@ dot -Tpdf tree2.dot -o tree4.pdf -Gdpi=600 # use this command in cmd win10 to co
 dot -Tpng tree2.dot -o tree5.png -Gdpi=600 # use this command in cmd win10 to convert dot to png    
   
 ## 6. reference:  
-1 https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset/tasks  
-2 https://medium.com/vickdata/a-simple-guide-to-scikit-learn-pipelines-4ac0d974bdcf  
-3 https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c  
-4 https://blog.csdn.net/lumugua/article/details/83450005
+[1] https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset/tasks  
+[2] https://medium.com/vickdata/a-simple-guide-to-scikit-learn-pipelines-4ac0d974bdcf  
+[3] https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c  
+[4] https://blog.csdn.net/lumugua/article/details/83450005
+[5] Why one-hot coding could be worse than lable coding for RF:
+  https://towardsdatascience.com/one-hot-encoding-is-making-your-tree-based-ensembles-worse-heres-why-d64b282b5769
